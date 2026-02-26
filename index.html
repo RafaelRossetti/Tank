@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Tank Mayhem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-ui">
+        <div id="p1-stats" class="stats">
+            <span class="player-name">P1 (Verde)</span>
+            <div id="p1-hearts" class="hearts">❤️❤️❤️</div>
+        </div>
+        <div id="p2-stats" class="stats">
+            <span class="player-name">P2 (Vermelho)</span>
+            <div id="p2-hearts" class="hearts">❤️❤️❤️</div>
+        </div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="overlay" class="hidden">
+        <h1 id="winner-text">Jogador 1 Venceu!</h1>
+        <button onclick="resetGame()">Jogar Novamente</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
